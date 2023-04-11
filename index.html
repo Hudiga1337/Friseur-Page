@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="primary-header flex">
+        <div class="logoclass">
+            <img src="img/logo.png" alt="Golden Cut Logo" class="logo"> <span>EXAMPLE NAME</span>
+        </div>
+
+        <button class="mobile-nav-toggle" 
+        aria-controls="primary-navigation" aria-expanded="false">
+         
+       MENU
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">
+                    <span aria-hidden="true">01</span>HOME
+                </a>                
+                <li class="active">
+                    <a href="#UBER">
+                    <span aria-hidden="true">02</span>UBER UNS
+                </a>               
+                <li class="active">
+                    <a href="#GALERY">
+                    <span aria-hidden="true">03</span>GALERY
+                </a>                
+                <li class="active">
+                    <a href="#KONTAKT">
+                    <span aria-hidden="true">04</span>KONTAKT
+                </a>                
+                <li class="active">
+                    <a href="#LOCATION">
+                    <span aria-hidden="true">05</span>LOCATION
+                </a>                
+            </ul>
+        </nav>
+    </header>
+    <div class="popup" id="popup">
+        <i class="icona fa-solid fa-square-phone-flip"></i>
+        <h2>To make termin call the number:</h2>
+        <p>000325125125</p>
+        <button type="button" onclick="closePopupnum()">OK</button>
+    </div>
+<main>
+        <div class="container">
+            <div class="upper-image">
+                <div class="text">
+                    <h2>Tradition & Expirience</h2>
+                    <div>Perfect and Sharp look</div>
+                    <div>We cut like a pros</div>
+                    <button class="btn" onclick="openPopupnum()">TERMIN AUSMACHEN</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-uber hiddenleft" id="UBER">
+        <div class="uberuns">
+            <img class="slidefromleft" src="img/uberunsimg1.jpg" alt="">
+            <div class="textuber">
+            <h1>UBER UNS</h1>
+            <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-uber hiddenleft" id="UBER">
+        <div class="uberuns">
+            <div class="textuber">
+                <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
+                <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
+                <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>    
+            </div>
+            <img class="slidefromleft" src="img/uberunsimg3.jpg" alt="">
+  
+        </div>
+    </div>
+
+    <div class="container-uber hiddenleft" id="UBER">
+        <div class="uberuns">
+            <img class="slidefromleft" src="img/uberunsimg2.jpg" alt="">
+            <div class="textuber">
+            <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
+            <h3 class="slidefromright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>    
+        </div>
+        </div>
+    </div>
+
+    <div class="container-kontakt hidden" id="KONTAKT">
+        <div class="logocontainer">
+            <h2>KONTAKT US UBER:</h2>
+        <img class="kontaktlogo" src="img/brkovi.png" alt="Golden Cut Logo" class="logo">
+    </div>
+        <div class="social-icon">
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-whatsapp"onclick="openPopupwappnumber()"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-solid fa-square-phone-flip" onclick="openPopupnumber()"></i></a></li> 
+                </ul>           
+        </div>
+        <div id="popupnumber" class="kontaktnumber">
+            <h2>+43 660 12312512</h2>
+        </div>
+        <div id="popupwappnumber" class="wappnumber">
+            <h2>+43 660 12312512</h2>
+        </div>
+    </div>
+    <div class="wrapper hidden" id="GALERY">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="imagesslide">
+            <img src="img/f1.jpg" alt="" srcset="">
+            <img src="img/f2.jpg" alt="" srcset="">
+            <img src="img/f3.jpg" alt="" srcset="">
+            <img src="img/f4.jpg" alt="" srcset="">
+            <img src="img/f5.jpg" alt="" srcset="">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+   </div>
+   <div class="location hidden" id="LOCATION">
+    <iframe class="loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.7409499646524!2d10.73699001551861!3d47.241212821140444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479cdd98f58b970b%3A0xba272546101ccc15!2sKramergasse%2010%2C%206460%20Gemeinde%20Imst!5e0!3m2!1sde!2sat!4v1675540740098!5m2!1sde!2sat" width="1000" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="location-text hiddendown">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+    <h3>Adresse: <span>Kramergasse 10, 6460 Gemeinde Imst</span><br><br>
+        Öffnungszeiten: <br>
+        Samstag	<span>09:00–12:00, 12:30–16:00</span><br>
+        Sonntag	<span>Geschlossen</span><br>
+        Montag	<span>Geschlossen</span><br>
+        Dienstag	<span>09:00–12:00, 12:30–18:00</span><br>
+        Mittwoch	<span>09:00–12:00, 12:30–18:00</span><br>
+        Donnerstag	<span>09:00–12:00, 12:30–18:00</span><br>
+        Freitag	<span>09:00–12:00, 12:30–18:00</span>
+        </h3>
+    </div>    
+</div>
+</main>
+
+<footer>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023  designed by <span>Hudiga</span></p>
+    </div>    
+</footer>
+
+<script src="https://kit.fontawesome.com/ae61999827.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
